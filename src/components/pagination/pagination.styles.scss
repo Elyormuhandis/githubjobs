@@ -1,0 +1,31 @@
+.pagination {
+  button {
+    background-color: #fff;
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #b7bcce;
+    border-radius: 4px;
+    color: #b7bcce;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #1e86ff;
+      color: #1e86ff;
+    }
+  }
+  button:disabled {
+    &:hover {
+      border: 1px solid #b7bcce;
+      color: #b7bcce;
+    }
+  }
+  .active {
+    color: #fff;
+    background: #1e86ff;
+    border: 1px solid #1e86ff;
+    &:hover {
+      border: 1px solid #1e86ff;
+      color: #fff;
+    }
+  }
+}

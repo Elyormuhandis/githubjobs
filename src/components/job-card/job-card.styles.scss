@@ -7,14 +7,16 @@
   height: 114px;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 32px;
   &__img {
     width: 90px;
     height: 90px;
     border-radius: 4px;
+    overflow: hidden;
     margin-right: 16px;
   }
   &__content {
-    width: 100%;
+    width: 90%;
     &--bottom {
       button {
         border: 1px solid #334680;

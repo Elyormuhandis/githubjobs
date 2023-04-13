@@ -1,8 +1,8 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { Header } from "../../components/header/header.component";
 import "./layout.styles.scss";
 import { Options } from "../../components/options/options.component";
+import { Jobs } from "../../components/jobs/jobs.component";
 
 export const Layout = () => {
   return (
@@ -17,10 +17,11 @@ export const Layout = () => {
           </header>
           <main>
             <Options />
-            <div className='jobs'>
-              <Outlet />
-            </div>
+            <Jobs />
           </main>
+          <footer className='footer'>
+            created by username - devChallenges.io
+          </footer>
         </div>
       </div>
     </div>

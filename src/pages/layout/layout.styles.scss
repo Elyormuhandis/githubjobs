@@ -1,5 +1,4 @@
 .layout {
-  height: 100vh;
   display: flex;
   justify-content: center;
   background-color: rgb(246, 247, 251);
@@ -19,11 +18,21 @@
       color: #282538;
     }
   }
-}
+  main {
+    margin-top: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-main {
-  margin-top: 42px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  footer {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #b9bdcf;
+    margin-bottom: 24px;
+  }
 }

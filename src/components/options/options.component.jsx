@@ -26,60 +26,68 @@ export const Options = () => {
             placeholder='City, state, zip code or country'
           />
         </div>
-        <div options__location--cities></div>
-        <div
-          className='options__location--items'
-          onClick={() => setLocation("London")}
-        >
+        {/* <div options__location--cities></div> */}
+        <div className='options__location--items'>
           <input
             type='radio'
             className='options__location--radio'
             id='radio1'
             checked={location === "London"}
           />
-          <label className='options__location--label' htmlFor='radio1'>
+          <label
+            className='options__location--label'
+            htmlFor='radio1'
+            onClick={() => setLocation(location !== "London" ? "London" : null)}
+          >
             London
           </label>
         </div>
-        <div
-          className='options__location--items'
-          onClick={() => setLocation("Amsterdam")}
-        >
+        <div className='options__location--items'>
           <input
             type='radio'
             className='options__location--radio'
             id='radio2'
             checked={location === "Amsterdam"}
           />
-          <label className='options__location--label' htmlFor='radio2'>
+          <label
+            className='options__location--label'
+            htmlFor='radio2'
+            onClick={() =>
+              setLocation(location !== "Amsterdam" ? "Amsterdam" : null)
+            }
+          >
             Amsterdam
           </label>
         </div>
-        <div
-          className='options__location--items'
-          onClick={() => setLocation("New York")}
-        >
+        <div className='options__location--items'>
           <input
             type='radio'
             className='options__location--radio'
             id='radio3'
             checked={location === "New York"}
           />
-          <label className='options__location--label' htmlFor='radio3'>
+          <label
+            className='options__location--label'
+            htmlFor='radio3'
+            onClick={() =>
+              setLocation(location !== "New York" ? "New York" : null)
+            }
+          >
             New York
           </label>
         </div>
-        <div
-          className='options__location--items'
-          onClick={() => setLocation("Berlin")}
-        >
+        <div className='options__location--items'>
           <input
             type='radio'
             className='options__location--radio'
             id='radio4'
             checked={location === "Berlin"}
           />
-          <label className='options__location--label' htmlFor='radio4'>
+          <label
+            className='options__location--label'
+            htmlFor='radio4'
+            onClick={() => setLocation(location !== "Berlin" ? "Berlin" : null)}
+          >
             Berlin
           </label>
         </div>
