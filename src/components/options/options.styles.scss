@@ -1,0 +1,86 @@
+.options {
+  &__top {
+    margin-bottom: 33px;
+  }
+  &__checkbox {
+    &--input {
+      margin-right: 12px;
+      height: 18px;
+      width: 18px;
+      border: 1px solid #b9bdcf;
+      border-radius: 2px; //   -left: 12px;
+    }
+    &--label {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      color: #334680;
+    }
+  }
+  &__location {
+    &--text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #b9bdcf;
+    }
+    &--search {
+      position: relative;
+      margin-bottom: 26px;
+    }
+    &--input {
+      margin-top: 14px;
+      outline: none;
+      border: none;
+      width: 379px;
+      height: 48px;
+      background: #ffffff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      padding: 17px 0 17px 45px;
+      &::placeholder {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #b9bdcf;
+      }
+    }
+    &--icon {
+      position: absolute;
+      bottom: 16px;
+      left: 14px;
+      width: 15px;
+      height: 15px;
+      fill: #b9bdcf;
+    }
+    &--cities {
+    }
+    &--items {
+      display: flex;
+      align-items: center;
+      padding: 9px 0;
+    }
+    &--radio {
+      width: 18px;
+      height: 18px;
+    }
+    &--label {
+      margin-left: 12.5px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #334680;
+    }
+  }
+}
