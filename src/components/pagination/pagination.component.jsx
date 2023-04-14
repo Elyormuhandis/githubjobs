@@ -28,7 +28,7 @@ export const Pagination = ({
       </button>
       {pages?.map((page, idx) => (
         <button
-          className={currentPage === page && " active"}
+          className={currentPage === page ? " active" : ""}
           key={idx}
           id={page}
           onClick={() => {

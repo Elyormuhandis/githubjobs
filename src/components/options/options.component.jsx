@@ -32,6 +32,7 @@ export const Options = ({ setLocation, location, setIsFulltime, setCity }) => {
             className='options__location--radio'
             id='radio1'
             checked={location === "London"}
+            onChange={() => {}}
           />
           <label
             className='options__location--label'
@@ -47,6 +48,7 @@ export const Options = ({ setLocation, location, setIsFulltime, setCity }) => {
             className='options__location--radio'
             id='radio2'
             checked={location === "Amsterdam"}
+            onChange={() => {}}
           />
           <label
             className='options__location--label'
@@ -64,6 +66,7 @@ export const Options = ({ setLocation, location, setIsFulltime, setCity }) => {
             className='options__location--radio'
             id='radio3'
             checked={location === "New York"}
+            onChange={() => {}}
           />
           <label
             className='options__location--label'
@@ -81,6 +84,7 @@ export const Options = ({ setLocation, location, setIsFulltime, setCity }) => {
             className='options__location--radio'
             id='radio4'
             checked={location === "Berlin"}
+            onChange={() => {}}
           />
           <label
             className='options__location--label'
