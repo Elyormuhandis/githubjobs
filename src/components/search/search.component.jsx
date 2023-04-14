@@ -1,6 +1,6 @@
 import React from "react";
 import "./search.styles.scss";
-export const Search = () => {
+export const Search = ({ setFilter }) => {
   return (
     <div className='search'>
       <div className='search__searchbox'>
@@ -18,6 +18,7 @@ export const Search = () => {
           </svg>
         </span>
         <input
+          onChange={(e) => setFilter(e.target.value)}
           className='search__searchbox--input'
           placeholder='Title, companies, expertise or benefits'
         />

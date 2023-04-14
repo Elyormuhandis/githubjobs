@@ -1,10 +1,6 @@
 import React from "react";
-import { Search } from "../../components/search/search.component";
-import "./layout.styles.scss";
-import { Options } from "../../components/options/options.component";
-import { Jobs } from "../../components/jobs/jobs.component";
-import { Main } from "../../components/main/main.component";
 import { Outlet } from "react-router";
+import "./layout.styles.scss";
 
 export const Layout = () => {
   return (

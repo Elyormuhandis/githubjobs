@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./options.styles.scss";
 import svg from "../../assets/images/earth-globe-tool-svgrepo-com.svg";
 
-export const Options = () => {
-  const [location, setLocation] = useState(null);
-
+export const Options = ({ setLocation, location, setIsFulltime, setCity }) => {
   return (
     <div className='options'>
       <div className='options__top'>
         <input
+          onChange={(e) => setIsFulltime(e.target.checked)}
           type='checkbox'
           className='options__checkbox--input'
           id='fulltime'
@@ -24,9 +23,9 @@ export const Options = () => {
           <input
             className='options__location--input'
             placeholder='City, state, zip code or country'
+            onChange={(e) => setCity(e.target.value)}
           />
         </div>
-        {/* <div options__location--cities></div> */}
         <div className='options__location--items'>
           <input
             type='radio'
