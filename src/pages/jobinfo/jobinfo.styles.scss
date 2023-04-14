@@ -1,0 +1,129 @@
+.jobinfo {
+  margin-top: 33px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  &__left {
+    width: 231px;
+    &--link {
+      display: block;
+      margin-bottom: 36px;
+      font-family: "Poppins";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #1e86ff;
+      & > * {
+        margin-right: 15px;
+      }
+    }
+    &--text {
+      font-family: "Poppins";
+      text-transform: uppercase;
+      color: #b9bdcf;
+      margin-bottom: 16px;
+    }
+    &--email {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      color: #334680;
+      span {
+        color: #1e86ff;
+      }
+    }
+  }
+  &__right {
+    width: 889px;
+    font-family: "Roboto";
+    &--title {
+      display: flex;
+      margin-bottom: 9px;
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin-right: 25px;
+        color: #334680;
+        text-transform: capitalize;
+      }
+      button {
+        border: 1px solid #334680;
+        border-radius: 4px;
+        padding: 6px 8px;
+        outline: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #334680;
+        background-color: #ffffff;
+      }
+    }
+    &--accesstime {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 32px;
+      img {
+        display: inline-block;
+        margin-right: 8.5px;
+      }
+      span {
+        display: inline-block;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #b7bcce;
+      }
+    }
+    &--company {
+      display: flex;
+      margin-bottom: 32px;
+      img {
+        border-radius: 4px;
+        margin-right: 12px;
+      }
+      div {
+        h4 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #334680;
+          margin-bottom: 10px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height */
+
+            color: #b9bdcf;
+          }
+        }
+      }
+    }
+
+    &--text {
+      width: 100%;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 135px;
+      color: #334680;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

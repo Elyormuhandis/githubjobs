@@ -2,10 +2,11 @@ import React from "react";
 import "./job-card.styles.scss";
 import globus from "../../assets/images/earth-globe-tool-svgrepo-com.svg";
 import accesstime from "../../assets/images/access-time.svg";
+import { Link } from "react-router-dom";
 
-export const JobCard = ({ job }) => {
+export const JobCard = ({ job, to }) => {
   return (
-    <div className='jobcard'>
+    <Link className='jobcard' to={"/" + to}>
       <div className='jobcard__img'>
         <img src={job.logo} width={"90px"} alt='jobimg' />
       </div>
@@ -40,6 +41,6 @@ export const JobCard = ({ job }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

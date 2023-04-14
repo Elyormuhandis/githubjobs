@@ -15,7 +15,7 @@ export const Jobs = () => {
   return (
     <div className='jobs'>
       {currrentJob?.map((job) => (
-        <JobCard key={job.id} job={job} />
+        <JobCard key={job.id} job={job} to={job.id} />
       ))}
       <div className='jobs__pagination'>
         <Pagination

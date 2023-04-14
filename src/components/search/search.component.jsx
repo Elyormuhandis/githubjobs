@@ -1,10 +1,10 @@
 import React from "react";
-import "./header.styles.scss";
-export const Header = () => {
+import "./search.styles.scss";
+export const Search = () => {
   return (
-    <div className='header'>
-      <div className='header__searchbox'>
-        <span className='header__searchbox--icon'>
+    <div className='search'>
+      <div className='search__searchbox'>
+        <span className='search__searchbox--icon'>
           <svg
             fill=' #B9BDCF'
             xmlns='http://www.w3.org/2000/svg'
@@ -18,10 +18,10 @@ export const Header = () => {
           </svg>
         </span>
         <input
-          className='header__searchbox--input'
+          className='search__searchbox--input'
           placeholder='Title, companies, expertise or benefits'
         />
-        <button className='header__searchbox--btn'>Search</button>
+        <button className='search__searchbox--btn'>Search</button>
       </div>
     </div>
   );
