@@ -7,7 +7,7 @@ import { Pagination } from "../pagination/pagination.component";
 export const Jobs = ({ filter, isFulltime, location, city }) => {
   const [filteredJobs, setfilteredJobs] = useState(jobs);
   const [currentPage, setCurrentPage] = useState(1);
-  const [jobsPerPage, setJobsPerPage] = useState(5);
+  const jobsPerPage = 5;
   const indexOfLastJob = currentPage * jobsPerPage;
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
   const currrentJob = filteredJobs.slice(indexOfFirstJob, indexOfLastJob);

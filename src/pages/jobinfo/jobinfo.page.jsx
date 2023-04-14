@@ -7,7 +7,7 @@ import accesstime from "../../assets/images/access-time.svg";
 import company from "../../assets/images/kasisto.png";
 import globus from "../../assets/images/earth-globe-tool-svgrepo-com.svg";
 export const JobInfo = () => {
-  const { id, job } = useLoaderData();
+  const { job } = useLoaderData();
 
   return (
     <Suspense fallback={<SyncLoader />}>
